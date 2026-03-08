@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en" data-theme="google-blue">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CryptoUserW</title>
+        <!-- Fonts & Icons -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- Header Navbar -->
+        <header class="md-navbar">
+            <div class="nav-content">
+                <span class="title-large">made by eno</span>
+                <button
+                    class="icon-button ripple"
+                    id="open-settings"
+                    aria-label="Settings"
+                >
+                    <span class="material-symbols-outlined">settings</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-container">
+            <!-- Hero Widget -->
+            <section class="hero-section">
+                <div class="avatar-frame">
+                    <div class="avatar-skeleton" id="avatar-loader"></div>
+                    <img
+                        id="avatar-img"
+                        class="avatar hide"
+                        alt="CryptoUserW"
+                        src="https://images.weserv.nl/?url=t.me/i/userpic/320/CryptoUserW.jpg"
+                    />
+                </div>
+                <h1 class="display-large animate-on-load">CryptoUserW</h1>
+                <p class="headline-small secondary-text animate-on-load">
+                    MD3 design lover ;D
+                </p>
+                <div class="hero-actions animate-on-load">
+                    <a
+                        href="https://t.me/CryptoUserW"
+                        target="_blank"
+                        class="md-button filled ripple"
+                    >
+                        <span class="material-symbols-outlined">send</span>
+                        <span>Contact me on Telegram</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Cards Section -->
+            <section class="section scroll-reveal">
+                <div class="card-grid">
+                    <a
+                        href="https://github.com/Vira911"
+                        target="_blank"
+                        class="md-card glass ripple"
+                    >
+                        <div class="card-icon secondary-container">
+                            <span class="material-symbols-outlined"
+                                >terminal</span
+                            >
+                        </div>
+                        <div class="card-text">
+                            <h3 class="title-large">GitHub</h3>
+                            <p class="body-medium secondary-text">Vira911</p>
+                        </div>
+                    </a>
+                    <div class="md-card glass ripple" id="discord-card">
+                        <div class="card-icon tertiary-container">
+                            <span class="material-symbols-outlined">forum</span>
+                        </div>
+                        <div class="card-text">
+                            <h3 class="title-large">Discord (click to copy)</h3>
+                            <p class="body-medium secondary-text">em_pq6uv</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="section scroll-reveal">
+                <div class="surface-card">
+                    <h2 class="headline-small">About</h2>
+                    <p class="body-large">
+                        Dedicated to high-performance, accessible, and beautiful
+                        web interfaces. I specialize in Material Design 3 and
+                        Pixel-grade motion systems, ensuring every pixel is
+                        stable and every interaction is fluid.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Theme Settings Panel (Bottom Sheet) -->
+        <div class="settings-sheet" id="settings-panel">
+            <div class="sheet-header">
+                <h2 class="title-large">Wallpaper & style</h2>
+                <button
+                    class="icon-button ripple"
+                    id="close-settings"
+                    aria-label="Close"
+                >
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            <div class="sheet-content">
+                <p class="label-large secondary-text">Theme Colors</p>
+                <div class="theme-grid">
+                    <button
+                        class="theme-chip ripple active"
+                        data-theme="google-blue"
+                    >
+                        Blue
+                    </button>
+                    <button class="theme-chip ripple" data-theme="google-green">
+                        Green
+                    </button>
+                    <button
+                        class="theme-chip ripple"
+                        data-theme="google-purple"
+                    >
+                        Purple
+                    </button>
+                    <button
+                        class="theme-chip ripple"
+                        data-theme="google-orange"
+                    >
+                        Orange
+                    </button>
+                    <button class="theme-chip ripple" data-theme="pixel-pastel">
+                        Pastel
+                    </button>
+                </div>
+                <div class="divider"></div>
+                <p class="label-large secondary-text">System appearance</p>
+                <div class="mode-list">
+                    <button class="mode-btn ripple" data-theme="dark-mode">
+                        Dark Theme
+                    </button>
+                    <button class="mode-btn ripple" data-theme="amoled-black">
+                        AMOLED Black
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
