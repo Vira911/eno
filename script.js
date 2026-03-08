@@ -49,14 +49,23 @@ function initAvatar() {
   const img = document.getElementById("avatar-img");
   const loader = document.getElementById("avatar-loader");
 
-  img.onload = () => {
-    img.classList.remove("hide");
-    loader.style.display = "none";
-  };
+  function showAvatar() {
+    img.classList.add("loaded");
+
+    if (loader) {
+      loader.style.display = "none";
+    }
+  }
+
+  // если изображение уже в кэше
+  if (img.complete && img.naturalWidth !== 0) {
+    showAvatar();
+  } else {
+    img.onload = showAvatar;
+  }
 
   img.onerror = () => {
-    img.src = `https://ui-avatars.com/api/?name=CryptoUserW&background=random&color=fff&size=320`;
-    img.onload();
+    img.src = "https://ui-avatars.com/api/?name=CryptoUserW&background=random&color=fff&size=320";
   };
 }
 
